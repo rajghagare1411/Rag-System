@@ -1,0 +1,10 @@
+pymupdf
+yt-dlp
+GitPython
+faiss-cpu
+sentence-transformers
+numpy
+youtube-transcript-api
+google-genai
+python-dotenv
+openai

@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+.venv-gpu/
+venv/
+ENV/
+
+# Secrets
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
