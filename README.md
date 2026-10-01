@@ -1,8 +1,8 @@
-﻿# RAG Universal
+﻿# 🚀 RAG Universal
 
 A lightweight Retrieval-Augmented Generation (RAG) system that ingests documents from PDFs, YouTube videos, and GitHub repositories, converts them into embeddings, stores them in a FAISS vector database, and answers questions using an LLM provider.
 
-## Features
+## ✨ Features
 
 - PDF ingestion using PyMuPDF
 - YouTube transcript extraction using `youtube-transcript-api`
@@ -12,7 +12,7 @@ A lightweight Retrieval-Augmented Generation (RAG) system that ingests documents
 - Question answering through Gemini, NVIDIA, or OpenRouter
 - Local persistence of the vector index in the `saved_store` directory
 
-## Project structure
+## 🗂️ Project structure
 
 ```text
 Rag_Universal/
@@ -39,7 +39,7 @@ Rag_Universal/
 └── .venv/
 ```
 
-## How it works
+## ⚙️ How it works
 
 1. A source is added in `main.py`.
 2. The relevant loader reads content from:
@@ -52,7 +52,7 @@ Rag_Universal/
 6. A user question is embedded and matched against the stored vector store.
 7. Relevant chunks are passed to the configured LLM provider for a grounded answer.
 
-## Setup
+## 🧰 Setup
 
 ### 1) Create a virtual environment
 
@@ -95,7 +95,7 @@ Supported provider options:
 - `nvidia` — uses `NVIDIA_API_KEY`
 - `openrouter` — uses `OPENROUTER_API_KEY`
 
-## Running the app
+## ▶️ Running the app
 
 ```bash
 python main.py
@@ -108,7 +108,7 @@ When the program starts:
 - you can enter one or more source paths or URLs
 - after ingestion, you can ask questions in the terminal
 
-## Supported sources
+## 📚 Supported sources
 
 ### PDF
 
@@ -129,13 +129,13 @@ https://youtu.be/VIDEO_ID
 https://github.com/owner/repository
 ```
 
-## Notes
+## 📝 Notes
 
 - The vector store is saved in `saved_store/` to keep the RAG context persistent across runs.
 - `saved_store` and `.env` are excluded from Git in `.gitignore`.
 - Model downloads may happen on first run, depending on the embedding model and provider setup.
 
-## Requirements
+## ✅ Requirements
 
 The project depends on:
 
@@ -150,6 +150,12 @@ The project depends on:
 - `python-dotenv`
 - `openai`
 
-## License
+## 📜 License
 
 This project is for educational and personal use unless otherwise specified.
+
+## 👨‍💻 Author
+
+Designed and built by Raj Ghagare.
+
+> Built with Python, FAISS, and modern LLM integrations for intelligent document retrieval.
