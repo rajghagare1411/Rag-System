@@ -1,19 +1,35 @@
-# Python cache
+# Python bytecode and caches
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
 
 # Virtual environments
 .venv/
 .venv-gpu/
 venv/
 ENV/
+env/
+.conda/
 
-# Secrets
+# Secrets and local env files
 .env
+.env.*
+!.env.example
 
-# IDEs
+# Generated project artifacts
+saved_store/
+*.index
+*.pkl
+vector_store.index
+vector_store_metadata.pkl
+
+# IDEs and editor metadata
 .vscode/
 .idea/
-
-# Claude Code
 .claude/
+.DS_Store
